@@ -1,0 +1,20 @@
+paths:
+  /entities/{id}:                # path of the user from your endpoint
+    get:                 # endpoint request type (post request)
+      tags:               # Tag property
+        - Entry            # Value of the tag
+      summary: gets a specific, associated entity of an authenticated user
+      security:
+       - cookieAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of diary entity to be retrieved.
+          schema:
+            type: uuid
+      responses:          # server responses
+        200:
+          description: An object with entity details
+        401:
+            description: Error message object in error property of response body
