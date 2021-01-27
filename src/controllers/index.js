@@ -1,3 +1,4 @@
+/*
 import services from '../services';
 import UserController from './user';
 import EntityController from './entity';
@@ -16,3 +17,4 @@ const entity = new EntityController(services, handleServiceOutput);
 export default {
   user, entity, User: UserController,
 };
+*/

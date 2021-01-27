@@ -1,3 +1,4 @@
+/*
 import controllers from '../controllers';
 import validations from '../validations';
 import UserMiddleware from './user';
@@ -9,3 +10,4 @@ const entity = new EntityMiddleware(validations, controllers);
 export default {
   user, entity,
 };
+*/

@@ -1,3 +1,4 @@
+/*
 export default (Router, handleResponse, { user: { signup, login } }) => {
   const router = Router();
 
@@ -7,3 +8,4 @@ export default (Router, handleResponse, { user: { signup, login } }) => {
 
   return router;
 };
+*/
