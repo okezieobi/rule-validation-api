@@ -1,3 +1,4 @@
+/*
 export default class UserMiddleWare {
   constructor(validations, controllers) {
     this.signup = [...validations.user.signup, controllers.user.signup, controllers.User.setJWT];
@@ -5,3 +6,4 @@ export default class UserMiddleWare {
     this.jwt = [...validations.user.jwt, controllers.User.verifyJWT, controllers.user.findById];
   }
 }
+*/

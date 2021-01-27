@@ -1,3 +1,4 @@
+/*
 import jwt from '../utils/jwt';
 
 export default class UserController {
@@ -40,3 +41,4 @@ export default class UserController {
       }).catch(next);
   }
 }
+*/

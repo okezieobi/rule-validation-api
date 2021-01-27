@@ -1,4 +1,4 @@
-import express, { Router, json, urlencoded } from 'express';
+import express, { json, urlencoded } from 'express';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import cors from 'cors';

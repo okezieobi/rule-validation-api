@@ -1,3 +1,4 @@
+/*
 import userRoutes from './user';
 import entryRoutes from './entity';
 import middleware from '../middleware';
@@ -15,3 +16,4 @@ export default (Router) => {
 
   return router;
 };
+*/
