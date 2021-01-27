@@ -1,34 +1,25 @@
 {
-  "name": "expressjs-mongodb",
+  "name": "rule-validation-api",
   "version": "0.0.0",
   "private": true,
-  "main": "jest.config.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "dev": "DEBUG=expressjs-mongodb:* nodemon --exec babel-node src/bin/www.js",
+    "dev": "DEBUG=rule-validation-api:* nodemon --exec babel-node src/bin/www.js",
     "release": "npm run clean && npm run build-app && npm run start",
     "clean": "rm -rf dist && mkdir dist",
     "build": "npm run clean && npm run build-app",
     "build-app": "babel src -s -d dist --presets=@babel/env",
-    "start": "node dist/bin/www.js",
-    "test": "NODE_ENV=test jest src/tests/index.test.js",
-    "coverage": "npm run test -- '--coverage'",
-    "coverage:coveralls": "npm run coverage && coveralls < coverage/lcov.info",
-    "coverage:codacy": "npm run coverage && cp -R coverage .github/workflows/coverage/"
+    "start": "node dist/bin/www.js"
   },
   "dependencies": {
-    "bcrypt": "^5.0.0",
     "cookie-parser": "~1.4.4",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "express": "~4.16.1",
-    "express-validator": "^6.6.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.8",
     "morgan": "~1.9.1",
     "regenerator-runtime": "^0.13.7",
     "swagger-jsdoc": "^4.0.0",
@@ -40,14 +31,9 @@
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/register": "^7.11.5",
-    "coveralls": "^3.1.0",
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "jest": "^26.4.2",
-    "jest-chain": "^1.1.5",
-    "jest-extended": "^0.11.5",
-    "nodemon": "^2.0.4",
-    "supertest": "^4.0.2"
+    "nodemon": "^2.0.4"
   }
 }
