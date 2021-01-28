@@ -9,8 +9,8 @@ const swaggerDefinition = {
     description: 'REST API for a rule validation demo', // short description of the app
   },
   servers: [
-    { url: 'https://rule-validation-api-demo.herokuapp.com/api/v1', description: 'Deployed server on Heroku' },
-    { url: 'http://localhost:5000/api/v1', description: 'Local development/testing server' },
+    { url: 'https://rule-validation-api-demo.herokuapp.com', description: 'Deployed server on Heroku' },
+    { url: 'http://localhost:5000', description: 'Local development/testing server' },
   ],
 };
 

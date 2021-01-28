@@ -1,0 +1,37 @@
+paths:
+  /:                # path of the user from your endpoint
+    get:                 # endpoint request type (post request)
+      tags:               # Tag property
+        - Task            # Value of the tag
+      summary: gets user details
+      responses:          # server responses
+        200:
+          description: An object containing user details.
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: Response title.
+              success:
+                type: string
+                description: Response status.
+              data:
+                type: object
+                description: Response data.
+                properties:
+                  name:
+                    type: string
+                    description: full name of user.
+                  github:
+                    type: string
+                    description: Github handle of user.
+                  email:
+                    type: string
+                    description: Email address of user.
+                  mobile:
+                    type: string
+                    description: Mobile phone number of user.
+                  twitter:
+                    type: string
+                    description: Twitter handle of user.
